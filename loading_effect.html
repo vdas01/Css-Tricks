@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Effect</title>
+    <style>
+        .loader{
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            border-radius: 50%;
+            border: 10px solid rgb(209, 209, 209);
+            border-top: 10px solid blue;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+</html>

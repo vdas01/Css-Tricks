@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+        .main_div{
+              width: 60%;
+              height: 30rem;
+              position: relative;
+              background-color: aqua;
+              border: 6px solid black;
+        }
+        .clip{
+            width: 100%;
+            height: inherit;
+            position:absolute;
+            background-repeat: no-repeat;
+            top: 0;
+            left: 0;
+        }
+        .img1{
+            background-image: url("img1.jpg");
+            background-size: contain;
+            background-position: center;
+            
+        }
+        .img2{
+            background-image: url("");
+            background-position: right;
+            background-size: contain;
+            
+        }
+        .img3{
+            background-image: url("");
+            background-position: left;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="clip img1"></div>
+        <div class="clip img2"></div>
+        <div class="clip img3"></div>
+    </div>
+</body>
+</html>

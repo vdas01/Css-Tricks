@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .main_div{
+            width: 100vw;
+            height: 100vh;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center_div{
+           
+        }
+        h1{
+            animation: type 3s steps(21);
+            animation-duration: infinite;
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: 'Courier New', Courier, monospace;
+            border-right: 4px solid gray;
+            width: 21ch;
+            font-size: 5rem;
+            color: gray;
+        }
+        @keyframes type{
+            0%{
+                width: 0ch;
+            }
+            100%{
+                 width: 21ch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <h1>Hey, I am Vishal Das.</h1>
+        </div>
+    </div>
+   
+</body>
+</html>

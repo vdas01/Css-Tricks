@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100vw;
+            background: cyan;
+            display: flex;
+            flex-wrap: wrap;     /*for responsive*/
+            /* flex-direction: row-reverse; */
+            justify-content: space-around;       /*to position elements in x axis or horizontally*/
+            /* justify-content: space-between; */    /*to adjust spaces in between boxes*/
+            align-items: center;                  /*to position elements vertically*/
+        }
+        section div{
+            /* width: 30%; */
+             flex-basis: 30%;     /*   same as width */
+            padding: 20px;
+            border:1px solid black;
+        }
+         .flex1{ 
+            /* flex: 2; */     /*to control width of boxex*/
+            background: yellow;
+        }
+        .flex2{
+            /* flex: 1; */
+            background: tomato;
+        }
+        .flex3{
+            /* flex: 1; */
+            background: violet;
+        } 
+        @media(min-width:768px){
+            section{
+          
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;       /*to position elements in x axis or horizontally*/
+            /* justify-content: space-between; */
+         
+        }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="flex1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero aut quidem porro at cum. Iusto ad consequa
+            magnam nesciunt eligendi dolores tempora in atque laudantium? Debitis quas impedit omnis perferendis exercitationem inventore 
+            totam! </div>
+            <div class="flex2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero aut quidem porro at cum. Iusto ad consequa
+                magnam nesciunt eligendi dolores tempora in atque laudantium? Debitis quas impedit omnis perferendis exercitationem inventore 
+                totam! </div>
+                <div class="flex3">Three Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero aut quidem porro at cum. Iusto ad consequa
+                    magnam nesciunt eligendi dolores tempora in atque laudantium? Debitis quas impedit omnis perferendis exercitationem inventore 
+                    totam! </div>
+    </section>
+</body>
+</html>

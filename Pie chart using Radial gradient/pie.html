@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main_div{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column;
+           background: black; */
+           background: rgb(131,58,180);
+background: linear-gradient(39deg, rgba(131,58,180,1) 12%, rgba(195,19,19,1) 36%, rgba(252,176,69,1) 54%, rgba(124,252,205,1) 73%, rgba(252,69,202,1) 99%);
+        }
+        .center_div{
+            width:60vw;
+            height:auto;
+            position: relative;
+            border: 1px solid black;
+            /* align-self: center;
+            justify-self: center; */
+            background: black;
+            color: white;
+            box-shadow:2px 2px 2px 3px rgb(255, 228, 110) ;
+        }
+        .center_div h1{
+            padding: 20px 0 20px 20px;
+            color: rgb(236, 231, 219);
+        }
+        .pie_chart{
+            /* background: radial-gradient(circle closest-side, red 100%,#fff 0); */
+            background: radial-gradient(circle closest-side, transparent 100%,#fff 0),
+            conic-gradient(
+                from 180deg,
+                #ee5253 0,
+                #ee5253 35%,
+                #ff9f43 0,
+                #ff9f43 60%,
+                #f368e0 0,
+                #f368e0 75%,
+                #0abde3 0,
+                #0abde3 89%,
+                #10ac84 0,
+                #10ac84 100% );
+            min-width:300px;
+            min-height: 400px;
+            margin-bottom: 48px;
+            margin-right: 242px;
+            margin-left: 20px;
+          
+        }
+        .center_div p{
+            position: absolute;
+            bottom: 1rem;
+            right: 2rem;
+            font-size: 1.2rem;
+            text-align: right;
+            
+        }
+        .center_div span::after{
+            content: "";
+            display: inline-block;
+            width: 0.6rem;
+            height: 0.6rem;
+            border-radius: 50%;
+            font-weight: 700;
+            background: currentColor;
+             margin: 0 0.5rem;
+        }
+        .center_div h3{
+            position: absolute;
+            bottom: 0;
+            padding: 1rem;
+            color: white;
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+        /* .top{
+            text-align: center; 
+           
+            font-size: 30px;
+        } */
+        /* .title{
+            animation: type 3s steps(29);
+            width: 29ch;
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: 'Pattaya', sans-serif;
+            color: gray;
+            border-right: 4px solid gray;
+        }*/
+        h1{
+            width: 45ch;
+            animation: type 3s steps(45);
+            border-right: 4px solid red;
+             overflow: hidden; 
+            white-space: nowrap;
+            
+        }
+        @keyframes type{
+            0%{
+                width: 0ch;
+            }
+            100%{
+                width:45ch;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <!-- <div class="top">
+            <h1 class="title">Hey, Welcome to this website.</h1>
+        </div> -->
+       
+        <div class="center_div">
+            <h1>India Top 5 States with Highest Corona Cases.</h1>
+            <div class="pie_chart"></div>
+            <p>
+                Maharastra 468265 <span style="color: #ee5253;"></span><br> 
+                Tamil Nadu 273460 <span style="color: #f28e2c;"></span><br>
+                Andra Pradesh 186461 <span style="color: #f368e0;"></span><br>
+                Karnataka 151449 <span style="color: #0abde3;"></span><br>
+                Delhi 140232 <span style="color: #10ac84;"></span><br>
+            </p>
+            <h3>India Corona Virus Cases till now</h3>
+        </div>
+       
+    </div>
+</body>
+</html>

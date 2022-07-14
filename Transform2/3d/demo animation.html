@@ -1,0 +1,126 @@
+:hover<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 300px;
+            height: 300px;
+                background-color: antiquewhite;
+                margin-left: 2rem;
+                margin-top: 2rem;
+                padding: 2rem;
+                transform-style: preserve-3d;
+                display: inline-block;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            font-size: 2rem;
+            transition: transform 3s;
+            transform-style: preserve-3d;
+        }
+        .box1:hover{
+            transform: rotateX(50deg);
+        }
+        .box2:hover{
+            transform:perspective(200px) rotateX(-30deg);
+        }
+        .box3:hover{
+            transform: rotateY(60deg);
+        }
+        .box4:hover{
+            transform:perspective(200px) rotateY(60deg);
+        }
+        .box5:hover{
+            transform: rotateZ(-30deg);
+        }
+        .box6:hover{
+            transform:perspective(200px) rotateZ(-30deg);
+        }
+        .box7:hover{
+            transform: rotate3d(-30deg,-30deg,-30deg);
+        }
+        .box8:hover{
+            transform: translateZ(50px);
+        }
+        .box9:hover{
+            transform:perspective(200px) translateZ(50px);
+        }
+        .box10:hover{
+            transform: translate3d(30px,20px,20px);
+        }
+        .box11:hover{
+            transform: scale3d(1.5,1.5,1.5);
+        }
+        .box12:hover{
+            transform:perspective(200px) scale3d(1.5,1.5,1.5);
+        }
+        .box13:hover{
+            transform: scaleZ(3);
+        }
+        .box14:hover{
+            transform:perspective(200px) scaleZ(3);
+        }
+        .box15:hover{
+            transform: perspective(-900px);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box box1">Rotate X</div>
+    </div>
+    <div class="main">
+        <div class="box box2">Rotate X with perspective</div>
+    </div>
+    <div class="main">
+        <div class="box box3">Rotate Y</div>
+    </div>
+    <div class="main">
+        <div class="box box4">Rotate Y with perspective</div>
+    </div>
+    <div class="main">
+        <div class="box box5">Rotate Z</div>
+    </div>
+    <div class="main">
+        <div class="box box6">Rotate Z with perspective</div>
+    </div>
+    <div class="main">
+        <div class="box box7">Rotate 3d</div>
+    </div>
+    <div class="main">
+        <div class="box box8">Translate Z</div>
+    </div>
+    <div class="main">
+        <div class="box box9">Translate Z with perspective</div>
+    </div>
+    <div class="main">
+        <div class="box box10">Translate 3d</div>
+    </div>
+    <div class="main">
+        <div class="box box11">Scale 3d</div>
+    </div>
+    <div class="main">
+        <div class="box box12">Scale 3d with perspective</div>
+    </div>
+    <div class="main">
+        <div class="box box13">Scale Z</div>
+    </div>
+    <div class="main">
+        <div class="box box14">Scale Z with perspective</div>
+    </div>
+    <div class="main">
+        <div class="box box15">Perspective</div>
+    </div>
+</body>
+</html>

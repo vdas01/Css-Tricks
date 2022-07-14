@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .main-div{
+            height: 100vh;
+            width: 100vw;
+            background-image: url("bb1.png");
+            position: relative;
+        }
+        .center_div{
+            border: 2px solid black;
+            height: auto;
+            width: 280px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: white;
+            border-radius: 16px;
+        }
+        .img_div{
+            height:200px;
+            width: inherit;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            border-radius: 16px;
+            background: linear-gradient(to right,#67624c,#767c6e);
+        }
+        figure img{
+            width: 450px;
+            height: 280px;
+            margin-top: -50px;
+            margin-left: -44px;
+        }
+        .about_div{
+            padding:30px 15px ;
+        }
+        .about_div h3{
+            text-align: center;
+            text-transform: uppercase;
+            color: #ec9b3b;
+            margin-top: 9px;
+            font-size: 19px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .about_div h1{
+            margin-top: 4px;
+            text-decoration: uppercase;
+            word-spacing: 3px;
+            font-size: 30px;
+            
+            text-align: center;
+        }
+        .lower_div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+            height: inherit;
+            width: inherit;
+            align-items: center;
+            border-bottom-right-radius: 16px;
+            border-bottom-left-radius:16px;
+        }
+        .lower_div div{
+            border-right: 2px solid black;
+            padding:10px;
+            flex-grow: 1;
+            color: white;
+            background-color: #ec9b3b;
+        }  
+        .lower_div div:hover{    
+            border-bottom-left-radius:16px; 
+            border-bottom-right-radius: 16px;    
+            background-color:#f58e10 ;
+            color: black;
+        }  
+        .lower_div div:last-child{
+            border-right: none;
+        }
+        .lower_div .lower_number{
+          font-size: 25px;
+          font-weight: bold;
+          padding-bottom: 3px;
+        }
+        .lower_div .lower_text{
+           text-transform: uppercase;
+            font-size: 11px;
+            font-weight: bold;
+            padding-bottom: 3px;
+        }    
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="center_div">
+            <div class="img_div">
+                <figure>
+                    <img src="bb.png" alt="" srcset="" height="200px" width="300px">
+                </figure>
+            </div>
+            <div class="about_div">
+                <h3>Level 1</h3>
+                <h1>The Barbarein</h1>
+                <p>The Barbarian is a klit-clad Scottish warrior with an
+                    angry,battle-ready expression,hungry for destruction.He 
+                    has close-cropped blonde hair and a long, yellow horseshoe mustache. 
+                </p>
+                <!-- lower div -->
+                <div class="lower_div">
+                    <div>
+                        <p class="lower_number">16</p>
+                        <p class="lower_text">Speed</p>
+                    </div>
+                    <div>
+                        <p class="lower_number">20<sup>s</sup> </p>
+                        <p class="lower_text">Traning</p>
+                    </div>
+                    <div>
+                        <p class="lower_number">0.4</p>
+                        <p class="lower_text">Range</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

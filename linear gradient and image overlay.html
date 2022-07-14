@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .parent_div{
+             width: 100vw;  /* or 100% */
+            height: 100vw;
+            background: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .child_div{
+            width: 70vw;
+            height: 60vh;
+            /* background-image:linear-gradient(to right,rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url("linear\ gradient\ and\ image\ overlay.jpg"); */               /*using two colours mixing completely*/
+           /* background-image:linear-gradient(to right,rgba(255,255,255,0.9)50%,rgba(0,0,0,0.5)50% ),url("linear\ gradient\ and\ image\ overlay.jpg"); */   /*using two colours without mixing completely*/
+            /* background-image:linear-gradient(to right,rgba(255,255,255,0.9)50%,transparent 50%),url("linear\ gradient\ and\ image\ overlay.jpg");       using one side as transparent */
+             background-image:linear-gradient(120deg,rgba(255,255,255,0.7)50%,transparent 50%),url("linear\ gradient\ and\ image\ overlay.jpg");          /*   using degree instead of direction */
+           background-size: 100% 100%;
+           box-shadow: 0 10px 20px -6px black;       /* horizontal vertical blur spreading  color*/
+        }
+    </style>
+</head>
+<body>
+    <div class="parent_div">
+        <div class="child_div">
+
+        </div>
+    </div>
+</body>
+</html>

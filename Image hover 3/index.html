@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main_div{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: rgb(19,18,18);
+           background: linear-gradient(56deg, rgba(19,18,18,1) 0%, rgba(9,9,121,1) 12%,
+            rgba(91,43,58,1) 33%, rgba(138,63,22,1) 60%, rgba(78,241,159,1) 100%);
+        }
+        figure{
+            width: 400px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            background: #252222;
+            box-shadow: 6px 6px 6px -3px rgba(255,255,255,0.75);
+        }
+        img{
+            width: 400px;
+            height: 500px;
+            transition: all 0.6s linear;
+            
+        }
+        figcaption{
+            width: 400px;
+            height: 500px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: rgb(255, 59, 59);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           font-size: 2.4rem;
+           opacity: 0;
+           transition: all 1s linear;
+        }
+        figure:hover img{
+           transform: scale(2);
+        }
+        figure:hover figcaption{
+            opacity: 1;
+            background: rgba(0, 0,0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <figure>
+            <img src="./kitty-cat-kitten-pet-45201.jpeg" alt="">
+            <figcaption><h4>Heloo,</h4>
+                <p>My name is Vishal Das</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./kitty-cat-kitten-pet-45201.jpeg" alt="">
+            <figcaption><h4>Heloo,</h4>
+                <p>My name is Kitty Lal</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="./kitty-cat-kitten-pet-45201.jpeg" alt="">
+            <figcaption><h4>Heloo,</h4>
+                <p>My name is Vishal Das</p>
+            </figcaption>
+        </figure>
+        
+    </div>
+</body>
+</html>

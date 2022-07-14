@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+        width: 100%;
+        height: 100vh;
+        background-color: #212f3d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        width: 20rem;
+        height: 10rem;
+        text-decoration: none;
+        border: 2px solid black;
+      }
+      span{
+          position: absolute;
+          padding: 2rem 4rem;
+        font-size: 3rem;
+        text-transform: uppercase;
+        transition:all 0.3s linear ;
+      }
+      span:first-child{
+          background-color:#FF4500;
+          color: black;
+      }
+      span:last-child{
+          background-color: #B8860B;
+          color: white;
+          clip-path: polygon(0 0, 63% 0, 51% 51%, 66% 100%, 0 100%, 0 48%);
+      }
+      span:last-child:hover{
+        clip-path: polygon(0 0, 100% 0, 100% 55%, 100% 100%, 0 100%, 0 48%);
+      }
+      span:first-child:hover ~ span {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 99%);
+      }
+    </style>
+</head>
+<body>
+        <a href="#">
+        <span class="text tex1">first</span>
+        <span class="text text2">first</span>
+    </a>
+   
+</body>
+</html>

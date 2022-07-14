@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --b-a-width:10vw;
+            --b-a-md-width:15vw;
+            --b-a-sm-width:20vw;
+        }
+        .main_div{
+            width: 100vw;
+            background: #3498db;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 4.5rem;
+            color: #fff;
+            text-shadow: 0 2px 5px rgba(0,0, 0, 0.5);
+            text-align: center; 
+            position: relative;
+
+        }
+        h1::before{
+            content: "";
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            width:var(--b-a-width) ;
+            border-bottom: 5px solid #2c3e50;
+        }
+        h1::after{
+            content: "";
+            position: absolute;
+            bottom: -10%;
+            transform: translateX(-50%);
+            left: 50%;
+            width:var(--b-a-width) ;
+            border-bottom: 5px solid #2c3e50;
+        }
+        /* for mobile:- */
+        @media(max-width:768px){
+            h1::before{
+            width:var(--b-a-sm-width) ;
+        }
+        h1::after{
+            width:var(--b-a-sm-width) ;
+        }
+        }
+
+         /* for text:-
+         h1{
+            font-size: 4.5rem;
+            color: #fff;
+            text-shadow: 0 2px 5px rgba(0,0, 0, 0.5);
+            /* text-align: center; */
+        /* }
+        h1::before{
+            content: "Full Stack developer ";
+            /* display: block; */
+        /* } */
+         /* h1::after{
+            content: " Boom Boom"; */
+            /* display: block; */
+        /* } */
+    </style>
+</head>
+<body>
+    <div class="main_div">
+      <h1>Vishal Das</h1>
+    </div>
+</body>
+</html>

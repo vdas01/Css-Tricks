@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            background-color: aqua;
+            color: black;
+            width: 60vw;
+            height: 40vh;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <progress id="pro" max="100" value="70">70%</progress>
+    <input type="text" list="text_editors">
+    <datalist id="text_editors">
+        <option>Atom</option>
+        <option>Sublime</option>
+        <option>Notepad++</option>
+        <option>Brackets</option>
+        <option>Wordpad</option>
+        <option>Text Edit</option>
+        <option>Text Mate</option>
+        <option>VS Code</option>
+    </datalist>
+    <div class="card" data-tilt>
+        <h5>Hello,World!</h5>
+    </div>
+    <script>
+        const successCallBack = (position) =>{
+            console.log(position);
+        }
+        const errorCallBack = (error) =>{
+            console.log(error);
+        }
+        navigator.geolocation.getCurrentPosition(successCallBack,errorCallBack);
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+</body>
+</html>

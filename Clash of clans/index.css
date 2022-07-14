@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    background-image:url("bb1.png");
+    position: relative;
+}
+.center_div{
+    width: 280px;
+    height: auto;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 16px;
+  text-align: center;
+  background-color: white;
+  box-shadow: -1px 15px 30px -10px black;
+  border-top-right-radius: 16px;
+  border-top-left-radius:16px;
+}
+.img_div{
+    width: inherit;
+    height: 200px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#67624c,#767c6e);
+}
+figure img{
+    width: 450px;
+    height: 280px;
+    margin-top: -50px;
+    margin-left: -44px;
+}
+.about-div{
+    padding: 30px 15px;
+  
+}
+.about_div h3{
+    margin-top: 31px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ec9b3b;
+}
+.about-div h1{
+    margin-top: 4px;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    font-size: 20px;
+    padding: 5px 0 0 0;
+}
+.about-div p{
+    padding-top: 12px;
+    font-size: 24px;
+    color: #a5b1c2;
+}
+.lower_div{
+    margin-top: 10px;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#ec9b3b ;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius:16px;
+}
+.lower_div div:hover{    
+    border-bottom-left-radius:16px; 
+    border-bottom-right-radius: 16px;    
+    background-color:#f58e10 ;
+    color: black;
+}
+.lower_div div{
+    
+    padding: 10px;
+    color: white;
+    flex-grow: 1;          /*equal width to all box in flex*/
+    border-right: 1px solid #fff;
+}
+.lower_div div:last-child{
+    border-right: none;
+}
+.lower_div .lower_number{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+.lower_div .lower_text{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
